@@ -12,6 +12,8 @@ import { useRouter } from 'next/navigation'
 import CtaSection from './cta'
 import FaqSection from './faq'
 import FooterSection from './footer'
+import TopWinnerSection from './winners/section'
+import ContestSection from './contests/section'
 
 const LandingPageContent = () => {
     const router = useRouter()
@@ -43,7 +45,7 @@ const LandingPageContent = () => {
                         </Button>
                     </div>
                     <div className="absolute -bottom-8 -left-8 z-20 hidden md:block">
-                        <AnimatedCursor text={"anonymous"} />
+                        <AnimatedCursor text={"try your luck"} />
                     </div>
                 </div>
                 <div className='w-1/2 flex justify-center items-center'>
@@ -52,6 +54,8 @@ const LandingPageContent = () => {
             </section>
             <Features />
             <Banners />
+            <TopWinnerSection />
+            <ContestSection />
             <CtaSection />
             <FaqSection />
             <FooterSection />

@@ -27,7 +27,7 @@ function FaqItems() {
                             <span className="group-hover:underline text-white">{item.question}</span>
                         </h1>
                     </AccordionTrigger>
-                    <AccordionContent className="text-sm md:text-lg md:leading-7 md:px-10 text-white">
+                    <AccordionContent className="text-[14px] md:text-lg md:leading-7 md:px-10 text-white">
                         {item.answer}
                     </AccordionContent>
                 </AccordionItem>
