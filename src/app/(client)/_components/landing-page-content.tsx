@@ -11,6 +11,7 @@ import Banners from './banners'
 import { useRouter } from 'next/navigation'
 import CtaSection from './cta'
 import FaqSection from './faq'
+import FooterSection from './footer'
 
 const LandingPageContent = () => {
     const router = useRouter()
@@ -42,7 +43,7 @@ const LandingPageContent = () => {
                         </Button>
                     </div>
                     <div className="absolute -bottom-8 -left-8 z-20 hidden md:block">
-                        <AnimatedCursor text={"anonymouse"} />
+                        <AnimatedCursor text={"anonymous"} />
                     </div>
                 </div>
                 <div className='w-1/2 flex justify-center items-center'>
@@ -53,6 +54,7 @@ const LandingPageContent = () => {
             <Banners />
             <CtaSection />
             <FaqSection />
+            <FooterSection />
             <Image src={"/bg/e1.svg"} alt='ellipse' width={600} height={600} className='absolute top-0 right-0 w-[40%] select-none pointer-events-none' />
             <Image src={"/bg/e2.svg"} alt='ellipse' width={600} height={600} className='absolute top-0 left-8 w-[85%] select-none pointer-events-none' />
             <Image src={"/bg/e3.svg"} alt='ellipse' width={600} height={600} className='absolute -bottom-56 left-0 w-[35%] select-none pointer-events-none' />

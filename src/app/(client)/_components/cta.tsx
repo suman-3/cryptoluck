@@ -5,7 +5,7 @@ import React from 'react'
 
 const CtaSection = () => {
     return (
-        <div className="w-full flex min-h-[45vh] md:min-h-[40vh] bg-custom-blue rounded-xl my-2 md:my-6 opacity-90 relative items-center justify-center">
+        <div className="w-full max-w-screen-2xl mx-auto flex min-h-[45vh] md:min-h-[40vh] bg-custom-blue rounded-xl my-2 md:my-6 opacity-90 relative items-center justify-center">
             <div className="w-full flex flex-col items-center justify-center px-5 md:px-10 z-50 gap-5">
                 <h1 className="text-white text-3xl md:text-4xl font-semibold tracking-wide text-left select-none">
                     Subscribe to our newsletter

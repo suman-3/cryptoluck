@@ -26,7 +26,7 @@ export const AnimatedCursor: React.FC<{ className?: string; text: string }> = ({
   >
     <div
       className={cn(
-        'w-fit rounded-full py-1 px-3 bg-[#6368E9] text-white font-normal text-sm flex items-center justify-center',
+        'w-fit rounded-full py-1 px-3 bg-custom-blue text-white font-normal text-sm flex items-center justify-center',
         className
       )}
     >
