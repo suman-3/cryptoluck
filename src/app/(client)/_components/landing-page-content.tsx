@@ -12,8 +12,8 @@ import { useRouter } from 'next/navigation'
 import CtaSection from './cta'
 import FaqSection from './faq'
 import FooterSection from './footer'
-import TopWinnerSection from './winners/section'
-import ContestSection from './contests/section'
+import { ContestSection } from './contests/section'
+import { TopWinnerSection } from './winners/section'
 
 const LandingPageContent = () => {
     const router = useRouter()
