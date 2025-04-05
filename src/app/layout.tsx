@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Providers } from '@/components/providers';
 import "./globals.css";
 
 
@@ -27,7 +28,7 @@ export default function RootLayout({
         className={`antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

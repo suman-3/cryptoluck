@@ -6,6 +6,8 @@ import { Button } from '../ui/button'
 import { AlignRight, Wallet } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { CustomConnectButton } from './ConnectButton.Custom'
 
 const Navbar = () => {
     const router = useRouter()
@@ -33,10 +35,8 @@ const Navbar = () => {
                     </Link>
                 </div>
             </div>
-            <div className='hidden md:flex items-center gap-4'>
-                <Button variant={"ghost"} className='border active:scale-95 border-white !h-10 rounded-full text-white w-40 hover:bg-transparent hover:text-white cursor-pointer'>
-                    <Wallet className='text-white size-4 shrink-0' /> Connect Wallet
-                </Button>
+            <div className='flex items-center gap-3'>
+            <CustomConnectButton />
                 <Button
                     onClick={handleLoginClick}
                     variant={"ghost"} className='bg-[#6368E9] active:scale-95 !h-10 rounded-full text-white w-24 hover:bg-[#6368E9] hover:text-white cursor-pointer'>
