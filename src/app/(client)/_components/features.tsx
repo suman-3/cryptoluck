@@ -29,10 +29,10 @@ const Features = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <div className='flex items-center justify-between gap-6 w-full max-w-screen-2xl mx-auto'>
+        <div className='grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-4 w-full max-w-screen-2xl mx-auto'>
             {features.map((feature, index) => (
                 <div
-                    className='w-fit h-full flex items-center gap-2 rounded-xl bg-[#3E3E3E40]/60 px-4 py-3 cursor-pointer backdrop-blur-sm transition-all duration-300 hover:bg-[#3E3E3E60]/80'
+                    className='col-span-2 h-full flex items-center gap-2 rounded-xl bg-[#3E3E3E40]/60 px-4 py-3 cursor-pointer backdrop-blur-sm transition-all duration-300 hover:bg-[#3E3E3E60]/80'
                     key={index}
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}

@@ -39,9 +39,9 @@ function FaqItems() {
 
 const FaqSection = () => {
     return (
-        <div className="w-full flex flex-col gap-8 items-center h-full pb-4 max-w-screen-2xl mx-auto">
-            <div id="faq" className="w-full flex items-start justify-center">
-                <h1 className="text-white text-3xl md:text-5xl font-semibold tracking-wide text-left select-none leading-9 md:leading-[4rem] w-72 md:w-full">
+        <div className="w-full flex flex-col gap-5 lg:gap-8 items-center h-full pb-4 max-w-screen-2xl mx-auto">
+            <div id="faq" className="w-full flex items-start justify-start">
+                <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide text-left select-none">
                     Frequently asked questions
                 </h1>
             </div>
